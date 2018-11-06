@@ -4,12 +4,16 @@
     <title>RailsWikinimous</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="navbar-wagon">
+      <h3><%= link_to "Articles.com", articles_path %></h3>
+      <%= link_to "New Article", new_article_path %>
+    </div>
     <%= yield %>
   </body>
 </html>

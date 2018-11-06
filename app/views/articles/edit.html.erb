@@ -1,0 +1,12 @@
+<div class="container">
+  <%= form_for @article do |a| %>
+    <%= a.label :title, "Enter a title" %>
+    <%= a.text_field :title %>
+
+    <%= a.label :dcontent, "Enter the content" %>
+    <%= a.text_field :content %>
+
+    <%= a.submit %>
+
+  <% end %>
+</div>
